@@ -5,11 +5,14 @@
 
 # Step 1:
 # Create dockerpath
-# dockerpath=<your docker ID/path>
+dockerpath=ml_predict
 
 # Step 2:  
 # Authenticate & tag
-echo "Docker ID and Image: $dockerpath"
+echo "Docker ID and Image: $dockerpath:latest"
+docker login --username=raphaelnagato
 
 # Step 3:
 # Push image to a docker repository
+docker push raphaelnagato/$dockerpath:latest
+
