@@ -41,5 +41,4 @@ jobs:
           name: run lint
           command: |
             . venv/bin/activate
-            cd project-ml-microservice-kubernetes
             make lint
